@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "CodeChef and Codeforces Submission Tracker",
+    "version": "1.0",
+    "description": "Track your CodeChef and Codeforces submissions in real-time",
+    "icons": {
+      "48": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "webNavigation",
+      "webRequest",
+      "notifications",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://*.codechef.com/",
+      "https://*.codeforces.com/"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
